@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Desafio 6</title>
+   <style>
+      div{
+         width: 200px;
+         height: 100px;
+         text-align: center;
+         line-height: 100px;
+         background-image: linear-gradient(90deg, red, green, blue);
+         color: aliceblue;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 18px;
+         border: 2px solid black;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   <h1>Comversor de Temperatura</h1>
+   <div onclick="clicar()">Converter</div>
+   <p id="res">Clique no botão para iniciar a conversão.</p>
+   <script>
+      function clicar() { 
+            var grauc = Number(window.prompt('Digite uma temperatura em °C (Celsius)'))
+            var grauf = grauc * 1.8 + 32
+            var graufh = grauf.toLocaleString('pt-BR')
+            var grauk = grauc + 273.15
+            var grauke = grauk.toLocaleString('pt-BR')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<h1>A temperatura de ${grauc}°C, corresponde a...</h1> <br>
+               ${grauke}°K (Kelvin) <br>
+               ${graufh}°F (Fahrenheit)`
+            }         
+   </script>
+</body>
+</html>

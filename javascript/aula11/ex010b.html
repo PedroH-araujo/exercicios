@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nacionalidade</title>
+</head>
+<body>
+   <h1>Vamos saber sua Nacionalidade</h1>
+   <input type="search" name="txtnc" id="txtnc">
+   <input type="button" value="descobrir" onclick="descobrir()">
+   <div id="res">
+
+   </div>
+   <script>
+      function descobrir() {
+         var n = document.getElementById('txtnc')
+         var nac = (n.value)
+         var res = document.getElementById('res')
+
+         if (nac == 'Brasil') {
+            res.innerHTML = `<p>Você é brasileirinho!</p>`
+         } else {
+            res.innerHTML = `<p>Você é Boludo safado!</p>`
+         }
+      }
+   </script>
+</body>
+</html>
