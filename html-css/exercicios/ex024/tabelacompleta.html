@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabela Completa</title>
+   <style>
+      table{
+         border-collapse: collapse;
+         width: 600px;
+      }
+      thead{
+         background-color: rgba(182, 175, 175, 0.966);
+      }
+      th,td{
+         padding: 20px;
+         text-align: center;
+         border: 1px solid black;
+      }
+      .ela{
+         background-image: linear-gradient(90deg,pink, rgb(180, 81, 211), rgb(95, 13, 73));
+      }
+      .ele{
+         background-image: linear-gradient(270deg, lightblue, rgb(11, 11, 158));
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <thead>
+         <th scope="col">Grupo</th>
+         <th scope="col">Nomes</th>
+         <th colspan="3" scope="colgroup">Filmes</th>
+      </thead>
+      <tbody>
+         <tr class="ela">
+            <th rowspan="3" scope="rowgroup" >Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+         </tr>
+         <tr class="ela">
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+         </tr>
+         <tr class="ela">
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+         </tr>
+         <tr class="ele">
+            <th rowspan="4" scope="rowgroup">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+         </tr>
+         <tr class="ele">
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+         </tr>
+         <tr class="ele">
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+         </tr>
+         <tr class="ele">
+            <td>Pedro Henrique</td>
+            <td>Avatar</td>
+            <td>Jhon Wick</td>
+            <td>Avenger's Ultimato</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th colspan="4">Total</th>
+            <td>1000</td>
+         </tr>
+      </tfoot>
+   </table>
+</body>
+</html>
