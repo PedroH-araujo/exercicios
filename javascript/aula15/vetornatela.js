@@ -7,4 +7,4 @@ valores.sort()
 for(let pos in valores){
    console.log(`A posição ${pos} tem o valor ${valores[pos]}`);
 }
-console.log(`num.indexOf(7)`);
+//console.log(`num.indexOf(7)`);
