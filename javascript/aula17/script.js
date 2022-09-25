@@ -1,31 +1,53 @@
-function add(){
+
    let numbar = document.getElementById('txtnum')
-   let n = Number(numbar.value)
    let res = document.getElementById('res')
    let select = document.getElementById('txts')
-   let num = []
-   if (n < 1 || n > 100){
-      window.alert('Por favor digite um número entre 1 e 100')
-   }else{
-   select.options[select.options.length] = new Option(`valor ${n} adicionado.`, 'My value');
+   let valores = []
 
-   
-   var addNum = function(x){
-   return num.push(n)
+
+   function isNumero(n){
+      if(Number(n) >= 1 && Number(n) <= 100){
+         return true
+
+      }else {
+
+         return false
+      }
    }
 
-
-
-   res.innerHTML = ` ${addNum(n)} ${num.length}`
+   function inLista(n, l){
+      if (l.indexOf(n) != -1){
+         
+      return true
+   } else {
+      
+      return false
+   }
    }
 
-}
-function finalizar(){
-   let numbar = document.getElementById('txtnum')
-   let n = Number(numbar.value)
-   let res = document.getElementById('res')
+   function add(){
+      if(isNumero(numbar.value) && !inLista(numbar.value, valores)){
+         
+         valores.push(numbar.value)
+         select.options[select.options.length] = new Option(`Valor ${numbar.value} adicionado`, 'My value');
+         
+      }else{
+         window.alert('Valor inválido ou já encontrado na lista')
+      }
+   }
    
-
-
-   res.innerHTML = ` ${num} ${num.length}`
-}   
+   function finalizar(){
+      valores.sort()
+      let total = valores.length
+      let maior = Number(total) + 1
+      let menor = valores[0]
+      
+      for (c=0 ;c < maior;c++)
+      
+      
+      res.innerHTML = 
+      `Ao todo, temos ${total} números cadastrados. <br>
+      O maior valor informado foi ${maior}. <br>
+      O menor valor informado foi ${menor}. <br>
+      Somando todos os valores, temos 
+   }
