@@ -49,5 +49,5 @@
       `Ao todo, temos ${total} números cadastrados. <br>
       O maior valor informado foi ${maior}. <br>
       O menor valor informado foi ${menor}. <br>
-      Somando todos os valores, temos 
+      Somando todos os valores, temos `
    }
