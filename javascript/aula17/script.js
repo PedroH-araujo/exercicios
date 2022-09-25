@@ -30,6 +30,7 @@
          
          valores.push(numbar.value)
          select.options[select.options.length] = new Option(`Valor ${numbar.value} adicionado`, 'My value');
+
          
       }else{
          window.alert('Valor inválido ou já encontrado na lista')
@@ -41,13 +42,18 @@
       let total = valores.length
       let maior = Number(total) + 1
       let menor = valores[0]
+      let soma = 0
+
+      for(let c = 0;c < total; c++){
+      soma = soma + Number(valores[c])
+      }
       
-      for (c=0 ;c < maior;c++)
-      
+      let media = soma / total
       
       res.innerHTML = 
       `Ao todo, temos ${total} números cadastrados. <br>
       O maior valor informado foi ${maior}. <br>
       O menor valor informado foi ${menor}. <br>
-      Somando todos os valores, temos `
+      Somando todos os valores, temos ${soma}. <br>
+      A média dos valores digitados é ${media}.`
    }

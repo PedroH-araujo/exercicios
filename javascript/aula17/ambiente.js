@@ -1,11 +1,10 @@
-let a = [1,3,7,9,8,]
+let a = [1,3,2,4,5,7,8]
 a.sort()
 let total = a.length
-let maior = Number(total) - 1
+let soma = 0
 
-
-for (c=0 ;c < maior;c++){
-   let res = Number(a[c]) + Number(a[c + 1])
-   console.log(`numero ${res}`);
+for(let i = 0;i < total; i++){
+   soma += a[i]
 }
 
+console.log(soma);
