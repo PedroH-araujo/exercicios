@@ -1,0 +1,129 @@
+@charset "UTF-8";
+*{
+   margin: 0;
+}
+body{
+   background-image: url(Fundo.jpg);
+   background-size: cover;
+   background-position: center center;
+}
+
+header>div{
+   border-radius: 110px;
+   margin: 40px auto;
+   width: 210px;
+   height: 210px;
+   display: flex;
+   padding: 5px;
+   background-image: linear-gradient(90deg, #9572FC, #43E7AD, #E2D45C);
+}
+header>div>a{
+   margin: auto;
+   height: 205px;
+   width: 205px;
+
+}
+.perfil{
+   margin: auto;
+   border-radius: 105px;
+}
+#jogos{/*COLOCAR MAX WIDTH, PRA VER SE TA CENTRALIZADO A BOX*/
+   margin: 30px auto;
+   background-image: linear-gradient(90deg, #9572FC, #43E7AD, #E2D45C);
+   max-width: 700px;
+   height: 214px;
+   border-radius: 20px;
+   line-height: 35px;
+   padding-top: 7px;
+}
+#jogos>div{
+   padding: 20px;
+   background-color: #2A2634;
+   border-radius: 20px;
+}
+#jogos>div>h2{
+   color: white;
+}
+#jogos>div>p{
+   color: grey;
+}
+#jogos>div>ul{
+   display: flex;
+   list-style: none;
+   padding-left: 0;
+}
+#jogos>div>ul>li{
+   padding: 10px;
+}
+#jogos>div>ul>li>a>img{
+   border-radius: 30px;
+   width: 100%;
+}
+#canais{
+   margin: 97px auto;
+   background-image: linear-gradient(90deg, #9572FC, #43E7AD, #E2D45C);
+   max-width: 700px;
+   border-radius: 20px;
+   line-height: 35px;
+   padding-top: 7px;
+   height: 166px;
+}
+#canais>div{
+   padding: 20px;
+   background-color: #2A2634;
+   border-radius: 20px;
+}
+#canais>div>h2{
+   color: white;
+}
+#canais>div>p{
+   color: grey;
+}
+#canais>div>ul{
+   display: flex;
+   list-style: none;
+   padding-left: 0;
+   justify-content: flex-start;
+
+}
+#canais>div>ul>li{
+   padding: 10px;
+   width: 100px;
+}
+#canais>div>ul>li>a>img{
+   display: inline-block;
+   border-radius: 100px;
+   width: 100%;
+   border: 1px solid grey;
+}
+#redes{
+   margin: 75px auto;
+   background-image: linear-gradient(90deg, #9572FC, #43E7AD, #E2D45C);
+   max-width: 700px;
+   border-radius: 20px;
+   line-height: 40px;
+   padding-top: 7px;
+   height: 160px;
+}
+#redes>div{
+   padding: 10px 20px;
+   background-color: #2A2634;
+   border-radius: 20px;
+}
+#redes>div>h2{
+   color: white;
+}
+#redes>div>p{
+   color: grey;
+}
+#redes>div>ul{
+   display: flex;
+   list-style: none;
+   padding-left: 0;
+}
+#redes>div>ul>li{
+   padding: 10px;
+}
+#redes>div>ul>li>a>img{
+   border-radius: 30px;
+}
