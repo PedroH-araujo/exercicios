@@ -413,3 +413,13 @@ section.services .container .service span {
    border-radius: 50%;
    color: var(--color-white);
 }
+
+section.services .container .service:nth-child(2) span {
+   background: var(--color-warning);
+}
+
+section.services .container .service:nth-child(3) span {
+   background: var(--color-success);
+}
+
+
