@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fazendo um Slider</title>
+
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+   <h1>Como fazer um Slider SOLO</h1>
+<!-- Slider main container -->
+<div class="swiper">
+   <!-- Additional required wrapper -->
+   <div class="swiper-wrapper">
+     <!-- Slides -->
+     <div class="swiper-slide"><img src="images/feed-1.jpg"></div>
+     <div class="swiper-slide"><img src="images/feed-2.jpg"></div>
+     <div class="swiper-slide"><img src="images/feed-3.jpg"></div>
+     <div class="swiper-slide"><img src="images/feed-4.jpg"></div>
+     <div class="swiper-slide"><img src="images/feed-5.jpg"></div>
+     <div class="swiper-slide"><img src="images/feed-6.jpg"></div>
+     ...
+   </div>
+   <!-- If we need pagination -->
+   <div class="swiper-pagination"></div>
+ 
+   <!-- If we need navigation buttons -->
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+ 
+   <!-- If we need scrollbar -->
+   <div class="swiper-scrollbar"></div>
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
