@@ -21,6 +21,15 @@
    text-decoration: none;
 }
 
+::-webkit-scrollbar {
+   width: 10px;
+   background: var(--color-primary-light);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--color-primary);
+}
+
 html{
    font-size: 15px;
    scroll-behavior: smooth;
@@ -114,6 +123,11 @@ nav{
    top: 0;
    z-index: 2;
    border-bottom: 1px solid var(--color-light);
+}
+
+nav.show-box-shadow {
+   box-shadow: 0 0.6rem 1rem var(--color-primary-light);
+   border: none;
 }
 
 nav .container {
@@ -332,6 +346,15 @@ section.skills .skill .head .left {
    display: flex;
    align-items: center;
    gap: 1rem;
+}
+
+section.skills .skill .items {
+   display: none;
+}
+
+/* For JS, show and hide items function*/
+section.skills .container .skill .items.show-items {
+   display: block;
 }
 
 section.skills .skill .item {
@@ -590,10 +613,12 @@ footer .container .socials a:hover {
    h5 {
       font-size:  0.67rem;
    }
-   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   NAV BAR(MQ)  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-   nav {
-      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+   .container {
+      width: 94%;
    }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   NAV BAR(MQ)  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
 
    nav h3 {
       margin-left: 1rem;
@@ -640,6 +665,7 @@ footer .container .socials a:hover {
    nav button#close-btn {
       display: none;
    }
+
    /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   LANDING SECTION(MQ)  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
    section.landing {
       margin-top: -4rem;
@@ -687,5 +713,79 @@ footer .container .socials a:hover {
    section.landing .container .inner-circle {
       width: 10rem;
       height: 10rem;
+   }
+
+   section.landing .container .outer-circle span {
+      width: 3rem;
+      height: 3rem;
+   }
+
+   section.landing .profile-area .outer-circle span:nth-child(1) {
+      left: calc(50% - 1.5rem);
+      top: -1.5rem;
+   }
+   
+   section.landing .profile-area .outer-circle span:nth-child(2) {
+      right: -1.5rem;
+      top: calc(50% - 1.5rem);
+   }
+   
+   section.landing .profile-area .outer-circle span:nth-child(3) {
+      left: -1.5rem;
+      top: calc(50% - 1.5rem);
+   }
+   
+   section.landing .profile-area .outer-circle span:nth-child(4) {
+      bottom: -1.5rem;
+      left: calc(50% - 1.5rem);
+      
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   ABOUT SECTION  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   section.about .container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      text-align: center;
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   SKILLS SECTION  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   section.skills .container {
+      width: 94%;
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   SERVICES SECTION  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   section.services .container {
+      grid-template-columns: 1fr;
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   PORTFOLIO SECTION  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   section.recent-work .container .projects{
+      grid-template-columns: 1fr;
+   }
+
+   section.recent-work .container h1 {
+      width: 94vw;
+      margin: 1.4rem 0 1rem;
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   CONTACT SECTION  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   section.contact .container {
+      width: 94vw;
+   }
+   section.contact .container p {
+      width: 80vw;
+      margin: 0.5rem auto 0;
+   }
+
+   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   FOOTER   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+   footer .container {
+      flex-direction: column;
+      gap: 3rem;
+   }
+
+   footer .container ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.4rem;
    }
 }
