@@ -7,3 +7,10 @@ String.prototype.reverse = function () {
 }
 
 console.log('Aleksib'.reverse())
+
+Array.prototype.first = function() {
+   return this[0]
+}
+
+console.log([1, 2, 3, 4, 5].first())
+console.log(['a', 'b', 'c', 'd', 'e'].first())
