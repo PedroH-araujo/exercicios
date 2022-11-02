@@ -6,6 +6,7 @@
    box-sizing: border-box;
    list-style: none;
    text-decoration: none;
+   color: black
 }
 
 nav {
@@ -17,11 +18,63 @@ div {
    justify-content: space-between;
 }
 ul {
-
+   margin: 5px 1rem;
    display: flex;
    align-items: flex-end;
-   padding-bottom: 1rem;
 }
 li{
-   margin: 0 2rem;
+   display: flex;
+}
+li a{
+   text-align: center;
+   padding: 1rem 2rem;
+   margin: 0 1.5rem;
+}
+li a:hover{
+   background: darkred;
+   border-radius: 15px;
+   transition: all 700ms ease;
+}
+button{
+   display: none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   MEDIA QUERIE   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+@media screen and (max-width: 1000px){
+   nav{
+      background: blue;
+
+   }
+   nav .container ul{
+      position: fixed;
+      background: green;
+      flex-direction: column;
+      width: 10rem;
+      top: 0;
+      height: 100vh;
+      margin: 0;
+      z-index: 3;
+      display: none;
+   }
+   nav ul li {
+      height: 5rem;
+      width: 100%;
+      align-items: center;
+   }
+
+   button{
+      display: inline-block;
+      background: transparent;
+      align-items: flex-end;
+      cursor: pointer;
+      margin-top: 13rem;
+      margin-right: 2rem;
+         
+   }
+   #menu-btn{
+      
+   }
+   #close-btn{
+      display: none;
+   }
 }
