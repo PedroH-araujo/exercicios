@@ -1,0 +1,47 @@
+*{
+   margin: 0;
+   text-decoration: none;
+   font-size: 25px;
+   color: black;
+}
+body{
+   margin: auto;
+}
+header{
+   margin: auto;
+   width: 1000px;
+}
+main{
+   width: 1000px;
+   margin: auto;
+}
+hr{
+   margin: auto;
+   width: 1000px;
+}
+img{
+   width: 30%;
+}
+.swiper {
+   width: 1000px;
+   height: 300px;
+ }
+ .swiper-button-next{
+
+ }
+
+nav{
+   display: flex;
+   justify-content: space-between;
+}
+ul{
+   display: flex;
+   align-items: end;
+}
+li a{
+   padding: 15px;
+}
+li a:hover{
+   background-color: yellow;
+   padding: 0 15px;
+}

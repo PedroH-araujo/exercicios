@@ -9,8 +9,14 @@
    color: black
 }
 
+:root{
+   --color-white: #fff;
+   --color-escuro: #464646;
+
+}
+
 nav {
-   background: grey;
+   background: var(--color-escuro);
    box-shadow: 0px 6px 11px 4px rgb(189, 8, 8)
 }
 div {
