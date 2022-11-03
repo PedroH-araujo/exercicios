@@ -53,4 +53,20 @@ li>a:hover{
    padding: 0 15px;
 }
 
+a.active{
+   color: rgb(255, 0, 0);
+   padding: 0 15px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SOCIALS $$$$$$$$$$$$$$$$$$$$$$$*/
