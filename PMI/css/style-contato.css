@@ -31,9 +31,10 @@ iframe{
 }
 
 #imensagem{
-    height: 155px;
+    height: 105px;
 }
 
-.socials>a{
-    
+.enviar{
+    display: block;
+    margin: 10px auto;
 }
