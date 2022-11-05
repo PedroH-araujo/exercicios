@@ -39,7 +39,7 @@
    top: 50%;
    left: 55%;
    transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);/* PARA A VERSÃO DE INTERNET EXPLORER ENTENDER*/
 }
 
 .overlay:hover{
