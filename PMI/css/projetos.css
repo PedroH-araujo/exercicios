@@ -10,14 +10,39 @@
    grid-template-columns: 33% 33% 34%;
 }
 .projetos>a>img{
-   width: 100%;
-   height: 100%;
+   width: 99%;
+   height: 99%;
 }
 
-.img1{  /*NAO ACEITA O SHORTHAND POR ISSO USO A BARRA*/
-   background: url('../imagens/img1.jpg') center center / cover
+#projeto1{
+   position: relative;
 }
-.img1:hover{
-   background: green;
+
+
+.img1{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.overlay{
+   position: absolute;
+   background: red;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   opacity: 0;
    transition: var(--transition);
+}
+
+.texto{
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+}
+
+.overlay:hover{
+   opacity: 1;
 }
