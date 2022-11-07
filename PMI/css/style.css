@@ -22,7 +22,7 @@ header,hr{
 }
 
 img.logo{
-   width: 300px;
+   width: 250px;
 }
 
 img{
@@ -67,3 +67,6 @@ footer{
 footer>p{
    font-size: 15px;
 }
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
