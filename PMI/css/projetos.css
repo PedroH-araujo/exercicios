@@ -45,3 +45,12 @@
 .overlay:hover{
    opacity: 1;
 }
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media (max-width: 1000px) {
+   .projetos{
+      grid-template-columns: auto;
+      max-width: 100%;
+   }
+}
