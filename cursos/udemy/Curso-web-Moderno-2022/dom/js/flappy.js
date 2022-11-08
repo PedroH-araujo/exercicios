@@ -17,7 +17,7 @@ function Barreira(reversa = false) {
 
 //const b = new Barreira(true)
 //b.setAltura(200)
-//document.querySelector('[wm-flappy]').appendChild(b.elemento)
+//document.querySelector('[wm-flappy]').appendChild(b.elemento) Teste da criação de Barreiras
 
 function ParDeBarreiras(altura, abertura, x) {
    this.elemento = novoElemento('div', 'par-de-barreiras')
@@ -43,5 +43,11 @@ function ParDeBarreiras(altura, abertura, x) {
    this.setX(x)
 }
 
-const b = new ParDeBarreiras(700, 200, 400)
-document.querySelector('[wm-flappy]').appendChild(b.elemento)
+//const b = new ParDeBarreiras(700, 200, 400)
+//document.querySelector('[wm-flappy]').appendChild(b.elemento) Teste da criação de Barreiras
+
+function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
+   this.pares = [
+      new ParDeBarreiras(altura, abertura, largura)
+   ]
+}
