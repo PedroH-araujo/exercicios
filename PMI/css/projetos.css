@@ -27,7 +27,7 @@
 
 .overlay{
    position: absolute;
-   background: red;
+   background: rgba(198, 196, 196, 0.988);
    width: 100%;
    height: 100%;
    top: 0;
@@ -44,7 +44,7 @@
 }
 
 .overlay:hover{
-   opacity: 1;
+   opacity: 0.6;
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */

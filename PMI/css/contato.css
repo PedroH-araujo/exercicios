@@ -30,8 +30,7 @@ input[type=number] {
 }
 
 input, textarea{
-    border-radius: 5px;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.222);
 }
 
 #imensagem{
@@ -45,9 +44,6 @@ input, textarea{
     cursor: pointer;
 }
 
-#imensagem:focus{
-    background-color: rgb(215, 230, 108);
-}
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
