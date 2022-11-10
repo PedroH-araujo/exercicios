@@ -1,5 +1,13 @@
 {
    "name": "Pedro Henrique",
    "job": "Estudante",
-   "github": "PedroH-araujo"
+   "github": "PedroH-araujo",
+   "playlists": {
+      "jogos": [
+         {
+            "title": "Algum titulo",
+            "url"
+         }
+      ]
+   }
 }
