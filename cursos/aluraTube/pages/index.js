@@ -22,6 +22,7 @@ return (
 )
 }
 
+const StyledHeader = 
 function Header() {
 return (
    <div>

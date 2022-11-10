@@ -1,3 +1,16 @@
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+   display: inline-block;
+   margin: auto;
+}
+
+iframe{
+    margin-right: 10px;
+}
 
 /*https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
 input::-webkit-outer-spin-button,
@@ -11,23 +24,13 @@ input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
 
-form{
-   display: inline-block;
-   margin: auto;
-}
-
-
-main{
-    display: flex;
-    justify-content: space-between;
-}
-
-iframe{
-    margin-right: 10px;
-}
 
 #contatos{
     margin: 0 auto;
+}
+
+input, textarea{
+    border-radius: 5px;
 }
 
 #imensagem{
@@ -37,4 +40,9 @@ iframe{
 .enviar{
     display: block;
     margin: 10px auto;
+    cursor: pointer;
+}
+
+#imensagem:focus{
+    background-color: rgb(215, 230, 108);
 }
