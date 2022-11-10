@@ -31,10 +31,12 @@ input[type=number] {
 
 input, textarea{
     border-radius: 5px;
+    border-color: black;
 }
 
 #imensagem{
     height: 105px;
+    border-width: 2px;
 }
 
 .enviar{
