@@ -6,6 +6,10 @@
    color: black;
 }
 
+#menu-bar,nav>button{
+   display: none;
+}
+
 body{
    width: 100vw;
    margin: 30px auto;
@@ -71,3 +75,56 @@ footer>p{
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
+@media (max-width: 1000px) {
+   header,hr{
+      max-width: 100%;
+   }
+   nav{
+      justify-content: space-around;
+   }
+   nav>button{
+      display: inline-block;
+      align-self: flex-end;
+      background: transparent;
+      height: 30px;
+      cursor: pointer;
+   }
+   #close-btn{
+      display: none;
+   }
+
+   #menu-bar{
+      display: none;
+   }
+
+   nav>ul{
+      display: none;
+   }
+
+   #menu-bar{
+      background: purple;
+      height: 205px;
+   }
+   #menu-bar>ul{
+      display: block;
+   }
+   #menu-bar>ul>li{
+      display: block;
+      padding: 6px;
+   }
+   #menu-bar>ul>li>a{
+      padding: 3px;
+      border-radius: 5px;
+   }
+   
+   
+   
+   
+   
+   
+   .projetos{
+      grid-template-columns: auto;
+      max-width: 100%;
+   }
+
+}
