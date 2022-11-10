@@ -48,6 +48,7 @@ ul{
 
 li>a{
    padding: 15px;
+   border-radius: 5px;
 }
 
 li>a:hover{
@@ -69,3 +70,4 @@ footer>p{
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
