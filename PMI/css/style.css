@@ -108,14 +108,14 @@ footer>p{
 
    #menu-bar{
       background: rgb(255, 255, 255);
-      height: 205px;
+      height: 190px;
    }
    #menu-bar>ul{
       display: block;
    }
    #menu-bar>ul>li{
       display: block;
-      padding: 6px;
+      padding: 2px;
    }
    #menu-bar>ul>li>a{
       padding: 3px;
