@@ -48,10 +48,20 @@ input, textarea{
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 @media (max-width: 1000px) {
+    body{
+        margin: auto;
+        width: 500px;
+    }
+    
+    
     main{
         width: 100%;
         align-items: center;
         flex-direction: column;
+    }
+
+    iframe{
+        width: auto;
     }
     #contatos{
         width: 500px;
