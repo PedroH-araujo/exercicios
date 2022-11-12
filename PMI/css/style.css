@@ -61,13 +61,14 @@ li>a{
 }
 
 li>a:hover{
-   background-color: yellow;
+   background-color: rgb(216, 206, 8);
    padding: 0 15px;
 }
 
 a.active{
    font-weight: 600;
    padding: 0 15px;
+   color: rgb(111, 104, 0);
 }
 
 footer{
