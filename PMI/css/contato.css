@@ -48,9 +48,8 @@ input, textarea{
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 @media (max-width: 1000px) {
-    body{
-        margin: auto;
-        width: 500px;
+    body { 
+        overflow-x: hidden; 
     }
     
     
@@ -64,7 +63,8 @@ input, textarea{
         width: auto;
     }
     #contatos{
-        width: 500px;
+        width: 100vw;
         margin-top: 10px;
+        margin-left: 1px;
     }
 }
