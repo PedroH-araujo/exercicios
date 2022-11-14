@@ -4,9 +4,96 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>IMG1</title>
+   <title>Studio-Life</title>
+   <!--STYLE-->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+   <!-- FAVICON -->
+   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+   <!-- PHOTO SWIPE -->
+   <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 </head>
 <body>
-   
+   <header>
+      <nav>
+         <a href="index.html"><img class="logo" src="imagens/Studio_Life_logo.png"></a>
+         <ul type ='none'>
+            <li><a href="residencial.html">Residencial</a></li>
+            <li><a href="interiores.html">Interiores</a></li>
+            <li><a href="institucional.html">Institucional</a></li>
+            <li><a href="concurso.html">Concurso</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="projeto-online.html">Projeto online</a></li>
+         </ul>
+         
+      <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+      <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+
+      </nav>
+   </header>
+   <div id="menu-bar">
+      <ul type ='none'>
+         <li><a href="residencial.html">Residencial</a></li>
+         <li><a href="interiores.html">Interiores</a></li>
+         <li><a href="institucional.html">Institucional</a></li>
+         <li><a href="concurso.html">Concurso</a></li>
+         <li><a href="equipe.html">Equipe</a></li>
+         <li><a href="contato.html">Contato</a></li>
+      </ul>
+   </div>
+   <hr>
+
+
+   <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+      <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+        data-pswp-width="500" 
+        data-pswp-height="500" 
+        target="_blank">
+        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+      </a>
+      <!-- cropped thumbnail: -->
+      <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+        data-pswp-width="500" 
+        data-pswp-height="500" 
+        data-cropped="true" 
+        target="_blank">
+        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+        Cropped
+      </a>
+      <!-- data-pswp-src with custom URL in href -->
+      <a href="https://unsplash.com" 
+        data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+        data-pswp-width="500" 
+        data-pswp-height="500" 
+        target="_blank">
+        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+      </a>
+      <!-- Without thumbnail: -->
+      <a href="http://example.com" 
+        data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+        data-pswp-width="500" 
+        data-pswp-height="500" 
+        target="_blank">
+        No thumbnail
+      </a>
+      <!-- wrapped with any element: -->
+      <div>
+        <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+          data-pswp-width="500" 
+          data-pswp-height="500" 
+          target="_blank">
+          <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+
+
+
+
+<script src="photoswipe.js"></script>
 </body>
 </html>
