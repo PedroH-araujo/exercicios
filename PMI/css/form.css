@@ -34,3 +34,28 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
+@media (max-width: 1000px) {
+   form{
+      width: auto;
+   }
+   
+   .residencial{
+      display: block;
+   }
+   .residencial>input{
+      width: 300px;
+   }
+   .checkbox{
+      display: grid;
+      justify-items: start;
+   }
+
+   .internos{
+      justify-content: flex-start;
+   }
+
+   .internos input{
+      margin: 10px;
+   }
+}
