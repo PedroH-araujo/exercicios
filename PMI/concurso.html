@@ -8,6 +8,7 @@
    <!--STYLE-->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/imgprojeto.css">
+   <link rel="stylesheet" href="css/concurso.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
 
@@ -50,20 +51,31 @@
 
 
    <!-- Images used to open the lightbox -->
-<div class="row">
-   <div class="column">
-     <img src="imagens/img6.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+<main>
+  <div class="row">
+     <div class="column">
+       <img src="imagens/concurso/img1.jpeg" onclick="openModal();currentSlide(1)">
+     </div>
+     <div class="column">
+       <img src="imagens/concurso/img2.jpeg" onclick="openModal();currentSlide(2)">
+     </div>
+     <div class="column">
+       <img src="imagens/concurso/img3.jpeg" onclick="openModal();currentSlide(3)">
+     </div>
+     <div class="column">
+       <img src="imagens/concurso/img4.jpeg" onclick="openModal();currentSlide(4)">
+     </div>
+     <div class="column">
+      <img src="imagens/concurso/img5.jpeg" onclick="openModal();currentSlide(4)">
+    </div>
+    <div class="column">
+      <img src="imagens/concurso/img6.jpeg" onclick="openModal();currentSlide(4)">
+    </div>
+    <div class="column">
+      <img src="imagens/concurso/img7.jpeg" onclick="openModal();currentSlide(4)">
+    </div>
    </div>
-   <div class="column">
-     <img src="imagens/img7.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-   </div>
-   <div class="column">
-     <img src="imagens/img8.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-   </div>
-   <div class="column">
-     <img src="imagens/img9.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-   </div>
- </div>
+</main>
  
  <!-- The Modal/Lightbox -->
  <div id="myModal" class="modal">
@@ -71,33 +83,37 @@
    <div class="modal-content">
  
      <div class="mySlides">
-       <div class="numbertext">1 / 4</div>
-       <img src="imagens/img6.jpg" style="width:100%">
+       <img src="imagens/concurso/img1.jpeg" style="width:100%">
      </div>
  
      <div class="mySlides">
-       <div class="numbertext">2 / 4</div>
-       <img src="imagens/img7.jpg" style="width:100%">
+       <img src="imagens/concurso/img2.jpeg" style="width:100%">
      </div>
  
      <div class="mySlides">
-       <div class="numbertext">3 / 4</div>
-       <img src="imagens/img8.jpg" style="width:100%">
+       <img src="imagens/concurso/img3.jpeg" style="width:100%">
      </div>
  
      <div class="mySlides">
-       <div class="numbertext">4 / 4</div>
-       <img src="imagens/img9.jpg" style="width:100%">
+       <img src="imagens/concurso/img4.jpeg" style="width:100%">
+     </div>
+     
+     <div class="mySlides">
+       <img src="imagens/concurso/img5.jpeg" style="width:100%">
+     </div>
+     
+     <div class="mySlides">
+       <img src="imagens/concurso/img6.jpeg" style="width:100%">
+     </div>
+     
+     <div class="mySlides">
+       <img src="imagens/concurso/img7.jpeg" style="width:100%">
      </div>
  
      <!-- Next/previous controls -->
      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
      <a class="next" onclick="plusSlides(1)">&#10095;</a>
  
-     <!-- Caption text -->
-     <div class="caption-container">
-       <p id="caption"></p>
-     </div>
 
  </div>
 

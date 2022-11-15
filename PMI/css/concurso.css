@@ -1,0 +1,11 @@
+.row{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+}
+.column{
+   width: 49%;
+   display: flex;
+   margin: 5px 0;
+}
