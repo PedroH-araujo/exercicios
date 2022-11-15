@@ -8,11 +8,20 @@
    <!--STYLE-->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
-
+   
    <!-- FAVICON -->
    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-
+   
+   <!-- JQUERY -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"><link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="/resources/demos/style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   <script>
+   $( function() {
+     $( "input" ).checkboxradio();
+   } );
+   </script>
 </head>
 <body>
    <header>
@@ -44,57 +53,149 @@
       </ul>
    </div>
    <hr>
-   <h1>Dados Residenciais</h1>
-   <form action="">
-      <p><label for="inome">Nome Completo:</label>
-      <input type="text" name="nome" id="inome"></p> 
-      <p><label for="icpf">CPF:</label>
-      <input type="number" name="cpf" id="icpf"></p>
-      <p><label for="iemail">E-mail:</label>
-         <input type="email" name="email" id="iemail"></p>
-      <p><label for="inumber">Telefone:</label>
-      <input type="number" name="number" id="inumber"></p>
-      <p><label for="iquadra">Quadra:</label>
-      <input type="number" name="quadra" id="iquadra"></p>
-      <p><label for="ilote">Lote:</label>
-      <input type="number" name="lote" id="ilote"></p>
-      <p><label for="imetroquadrado">Metro Quadrado desejado:</label>
-      <input type="number" name="metroquadrado" id="imetroquadrado"></p>
-      <br>
-      <br>
-      <br>
-      <p>AMBIENTES INTERNOS:</p>
-         <p>Sala/Cozinha integrado<input type="checkbox" name="" id=""></p>
-         <p>Sala/Cozinha Separado<input type="checkbox" name="" id=""></p>
-         <p>Piscina<input type="checkbox" name="" id=""></p>
-         <p>Pérgola<input type="checkbox" name="" id=""></p>
-         <p>Gazebo<input type="checkbox" name="" id=""></p>
-         <p>Deck<input type="checkbox" name="" id=""></p>
-<br>
-<br>
-<br>
-<p><label for="idormitorio">Dormitórios:</label>
-   <input type="number" name="dormitorio" id="idormitorio"></p>
-<p><label for="isuite">Suítes</label>
-   <input type="number" name="suite" id="isuite"></p>
-<p><label for="ibanheiro">Banheiros:</label>
-   <input type="number" name="banheiro" id="ibanheiro"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-<p><label for="ilote">Lote:</label>
-   <input type="number" name="lote" id="ilote"></p>
-   </form>
+   <main>
+      
+      <form action="https://formspree.io/f/xvoywdar" method="POST">
+         
+         <h1>Dados Residenciais</h1>
+         
+         <p><label for="inome">Nome Completo:</label>
+            <input type="text" name="nome" id="inome">
+         </p> 
+         <p><label for="icpf">CPF:</label>
+            <input type="number" name="cpf" id="icpf">
+         </p>
+         <p><label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+         </p>
+         <p><label for="inumber">Telefone:</label>
+            <input type="number" name="number" id="inumber">
+         </p>
+         <p><label for="iquadra">Quadra:</label>
+            <input type="number" name="quadra" id="iquadra">
+         </p>
+         <p><label for="ilote">Lote:</label>
+            <input type="number" name="lote" id="ilote">
+         </p>
+         <p><label for="imetroquadrado">Metro Quadrado desejado:</label>
+            <input type="number" name="metroquadrado" id="imetroquadrado">
+         </p>
+      
+   
+            <br>
+
+            <fieldset>
+               <legend>Ambientes Internos: </legend>
+               <label for="isala/cozinhaintegrado">Sala/Cozinha integrado </label>
+               <input type="checkbox" name="sala/cozinhaintegrado" id="isala/cozinhaintegrado">
+               <label for="isala/cozinhaseparado">Sala/Cozinha Separado</label>
+               <input type="checkbox" name="sala/cozinhaseparado" id="isala/cozinhaseparado">
+               <label for="ipiscina">Piscina</label>
+               <input type="checkbox" name="piscina" id="ipiscina">
+               <label for="ipergola">Pérgola</label>
+               <input type="checkbox" name="pergola" id="ipergola">
+               <label for="igazebo">Gazebo</label>
+               <input type="checkbox" name="gazebo" id="igazebo">
+               <label for="ideck">Deck</label>
+               <input type="checkbox" name="deck" id="ideck">
+               </fieldset>
+
+               <br>
+
+         <p><label for="idormitorio">Dormitórios:</label>
+            <input type="number" name="dormitorio" id="idormitorio">
+         </p>
+         <p><label for="isuite">Suítes</label>
+            <input type="number" name="suite" id="isuite">
+         </p>
+         <p><label for="ibanheiro">Banheiros:</label>
+            <input type="number" name="banheiro" id="ibanheiro">
+         </p>
+         <p><label for="iHome">Home(Sala de Tv)</label>
+            <input type="number" name="Home" id="iHome">
+         </p>
+         <p><label for="ilavabo">Lavabo</label>
+            <input type="number" name="lavabo" id="ilavabo">
+         </p>
+         <p><label for="iescritorio">Escritório:</label>
+            <input type="number" name="escritorio" id="iescritorio">
+         </p>
+         <p><label for="iliving">Living (Sala de estar):</label>
+            <input type="number" name="living" id="iliving"></p>
+         <p><label for="iareaserviço">Área de Serviço:</label>
+            <input type="number" name="areaserviço" id="iareaserviço"></p>
+         <p><label for="icozinha"> Cozinha:</label>
+            <input type="number" name="cozinha" id="icozinha"></p>
+         <p><label for="iareagourmet">Área Gourmet:</label>
+            <input type="number" name="areagourmet" id="iareagourmet"></p>
+         <p><label for="ihallentrada">Hall de Entrada:</label>
+            <input type="number" name="hallentrada" id="ihallentrada"></p>
+         <p><label for="idespensa">Despensa (Depósito):</label>
+            <input type="number" name="despensa" id="idespensa"></p>
+
+
+         <fieldset>
+         <legend>Fachada: </legend>
+         <label for="icasaterrea">Casa Térrea </label>
+         <input type="checkbox" name="casaterrea" id="icasaterrea">
+         <label for="icasasobrado">Casa Sobrado</label>
+         <input type="checkbox" name="casasobrado" id="icasasobrado">
+         <label for="itelhadoaparente">Telhado Aparente</label>
+         <input type="checkbox" name="telhadoaparente" id="itelhadoaparente">
+         <label for="itelhadoplatibanda">Telhado Platibanda (Caixote)</label>
+         <input type="checkbox" name="telhadoplatibanda" id="itelhadoplatibanda">
+         </fieldset>
+
+         <br>
+
+         <fieldset>
+            <legend>Elementos da fachada (Opcional): </legend>
+            <label for="checkbox-1">Estrutura Metálica </label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+            <label for="checkbox-2">Estrutura Madeira</label>
+            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+            <label for="checkbox-3">Estrutura Revestimentos</label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+         </fieldset>
+
+
+         <fieldset>
+            <legend>Estilo arquitetônico: </legend>
+            <label for="radio-1">Clássico</label>
+            <input type="radio" name="radio-1" id="radio-1">
+            <label for="radio-2">Moderno</label>
+            <input type="radio" name="radio-1" id="radio-2">
+            <label for="radio-3">Rustico</label>
+            <input type="radio" name="radio-1" id="radio-3">
+            <label for="radio-3">Contemporâneo</label>
+            <input type="radio" name="radio-1" id="radio-3">
+         </fieldset>
+
+      
+         <fieldset>
+            <legend>Hidráulica: </legend>
+            <label for="checkbox-1">Ducha Higiênica</label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+            <label for="checkbox-2">Água Quente</label>
+            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+            <label for="checkbox-3">Caixa Acoplada</label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+            <label for="checkbox-3">Vaso Hidra</label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+            <label for="checkbox-3">Pressurisador</label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+            <label for="checkbox-3">Poço Artesiano</label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Elétrica: </legend>
+            <label for="checkbox-1">Placa Solar</label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+         </fieldset>
+
+         <p>Observações:</p>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="5"></textarea>
+         
+            <input class="enviar" type="submit" value="Enviar">
+      </form>
+   </main>
