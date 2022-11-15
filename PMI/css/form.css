@@ -1,0 +1,36 @@
+
+form p{
+   margin: 5px;
+}
+
+.residencial{
+   display: grid;
+}
+.internos{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 5px;
+}
+legend{
+   font-weight: 600;
+}
+
+input[type=checkbox] {
+   margin-right: 8px;
+}
+
+.enviar{
+   display: block;
+}
+
+/*https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
