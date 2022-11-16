@@ -47,19 +47,18 @@ input[type=number] {
    .residencial{
       display: block;
    }
-   .residencial>input{
+   .residencial>input,
+   .internos input{
       width: 300px;
+      margin: 5px;
    }
    .checkbox{
       display: grid;
       justify-items: start;
+      margin: 5px;
    }
 
    .internos{
       display: inline;
-   }
-
-   .internos input{
-      margin: 10px;
    }
 }
