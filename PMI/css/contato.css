@@ -42,6 +42,7 @@ input, textarea{
     display: block;
     margin: 10px auto;
     cursor: pointer;
+    background: rgb(241, 241, 241);
 }
 
 
