@@ -62,4 +62,8 @@ input[type=number] {
    .internos{
       display: inline;
    }
+
+   .enviar{
+      margin-left: 5px;
+   }
 }

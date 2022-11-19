@@ -130,9 +130,7 @@ footer>p{
    }
    
 
-   .projetos{
-      grid-template-columns: auto;
-      max-width: 100%;
-   }
+   
+
 
 }

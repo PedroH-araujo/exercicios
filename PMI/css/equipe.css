@@ -3,17 +3,17 @@
 }
 
 
-#projetos{
+#equipe{
    margin: 10px auto;
    height: 800px;
    width: 1015px;
    display: grid;
-   grid-template-columns: 33% 33% 33%;
+   grid-template-columns: 50% 50%;
    justify-content: center;
    justify-items: center;
 }
 
-.projeto{
+.pessoa{
    position: relative;
    width: 99%;
    height: 99%;
@@ -48,11 +48,9 @@
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MEDIA QUERIE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-
 @media (max-width: 1000px) {
-   #projetos{
+   #equipe{
       grid-template-columns: auto;
       max-width: 100%;
    }
 }
-
