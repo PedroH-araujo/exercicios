@@ -9,7 +9,8 @@
    display: flex;
    margin: 5px 0;
 }
-.column:nth-child(1){
+
+.img-grande{
    width: 100%;
 }
 
@@ -23,6 +24,7 @@
    flex-wrap: wrap;
    max-width: 45%;
    }
+
    .myslides>img{
       max-width: 600px;
    }

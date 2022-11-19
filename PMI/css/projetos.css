@@ -8,7 +8,7 @@
    height: 800px;
    width: 1015px;
    display: grid;
-   grid-template-columns: 33% 33% 33%;
+   grid-template-columns: 50% 50%;
    justify-content: center;
    justify-items: center;
 }
