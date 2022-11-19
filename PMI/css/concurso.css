@@ -14,11 +14,13 @@
    main{
      max-width: 100vw;
    }
-   .column{
+   .row{
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
-   max-width: 45%;
+   max-width: 100%;
+   }
+   .column{
+      width: 90%;
    }
    .myslides>img{
       max-width: 600px;
