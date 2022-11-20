@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio-Life</title>
+  <!--STYLE-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/foto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+   
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="index.html"><img class="logo" src="imagens/Studio_Life_logo.png"></a>
+         <ul type ='none'>
+            <li><a href="residencial.html">Residencial</a></li>
+            <li><a href="interiores.html">Interiores</a></li>
+            <li><a href="institucional.html" class="active">Institucional</a></li>
+            <li><a href="concurso.html">Concurso</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="projeto-online.html">Projeto online</a></li>
+         </ul>
+         
+      <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+      <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+
+      </nav>
+   </header>
+   <div id="menu-bar">
+      <ul type ='none'>
+         <li><a href="residencial.html">Residencial</a></li>
+         <li><a href="interiores.html">Interiores</a></li>
+         <li><a href="institucional.html" class="active">Institucional</a></li>
+         <li><a href="concurso.html" >Concurso</a></li>
+         <li><a href="equipe.html">Equipe</a></li>
+         <li><a href="contato.html">Contato</a></li>
+         <li><a href="projeto-online.html">Projeto online</a></li>
+      </ul>
+   </div>
+   <hr>
+
+
+   <!-- Images used to open the lightbox -->
+<main>
+  <div class="row">
+     <div class="column img-grande">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado1.jpeg" onclick="openModal();currentSlide(1)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado2.jpeg" onclick="openModal();currentSlide(2)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado3.jpeg" onclick="openModal();currentSlide(3)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado4.jpeg" onclick="openModal();currentSlide(4)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado5.jpeg" onclick="openModal();currentSlide(5)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado6.jpeg" onclick="openModal();currentSlide(6)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado7.jpeg" onclick="openModal();currentSlide(7)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado8.jpeg" onclick="openModal();currentSlide(8)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado9.jpeg" onclick="openModal();currentSlide(9)">
+     </div>
+     <div class="column img-grande">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado10.jpeg" onclick="openModal();currentSlide(10)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado11.jpeg" onclick="openModal();currentSlide(11)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado12.jpeg" onclick="openModal();currentSlide(12)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado13.jpeg" onclick="openModal();currentSlide(13)">
+     </div>
+     <div class="column">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado14.jpeg" onclick="openModal();currentSlide(14)">
+     </div>
+     
+     
+  </div>
+</main>
+ 
+ <!-- The Modal/Lightbox -->
+ <div id="myModal" class="modal">
+   <span class="close cursor" onclick="closeModal()">&times;</span>
+   <div class="modal-content">
+ 
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado1.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado2.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado3.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado4.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado5.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado6.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado7.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado8.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado9.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado10.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado11.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado12.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado13.jpeg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+       <img src="imagens/institucional/Projeto Eldorado Brasil/Eldorado14.jpeg" style="width:100%">
+     </div>
+
+     
+     <!-- Next/previous controls -->
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+
+ </div>
+ 
+ <script>
+   // Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+ </script>
+<script src="main.js"></script>
+</body>
+</html>
