@@ -25,7 +25,7 @@
    max-width: 45%;
    }
 
-   .myslides>img{
-      max-width: 600px;
+   .mySlides{
+      background-color: black;
    }
 }
