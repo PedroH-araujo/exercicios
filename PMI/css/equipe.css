@@ -53,4 +53,9 @@
       grid-template-columns: auto;
       max-width: 100%;
    }
+
+   .texto:nth-child(1){
+      left: 56%;
+      top: 47%;
+   }
 }
