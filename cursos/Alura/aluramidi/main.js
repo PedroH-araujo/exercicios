@@ -1,4 +1,4 @@
-function tocaPom(){
+/*function tocaPom(){
    document.querySelector('#som_tecla_pom').play()
 }
 
@@ -48,4 +48,4 @@ var tom = document.querySelector('.tecla_tom')
 
 tom.addEventListener("click", function(){
    document.getElementById('som_tecla_tom').play()
-})
+})*/
