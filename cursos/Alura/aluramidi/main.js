@@ -1,8 +1,8 @@
-var pom = document.querySelector('.tecla_pom')
-
-pom.addEventListener("click", function(){
+function tocaPom(){
    document.querySelector('#som_tecla_pom').play()
-})
+}
+
+document.querySelector('.tecla_pom').onclick = tocaPom;
 
 var clap = document.querySelector('.tecla_clap')
 
