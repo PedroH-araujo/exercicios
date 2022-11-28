@@ -1,16 +1,19 @@
-const ajustes = document.querySelectorAll('.controle-ajuste')
-const valor = document.querySelectorAll('.controle-contador')
+
+const menos = document.querySelector('#subtrair')
+
+const controle = document.querySelectorAll('.controle-ajuste')
+
+controle.forEach((elemento) => {
+   elemento.addEventListener("click", (evento) => {
+      manipulaDados(evento.target.textContent)
+   })
+})
 
 
-var menos = function(){
-   valor[0].value--
+function manipulaDados(operacao) {
+   if(operacao === "-"){
+      contador.value--
+   } else {
+      contador.value++
+   }
 }
-var mais = function(){
-   valor[0].value++
-}
-
-ajustes[0].addEventListener("click", menos)
-ajustes[1].addEventListener("click", mais)
-
-
-
