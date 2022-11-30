@@ -23,8 +23,9 @@ form.addEventListener("submit", (evento) => {
       itemAtual.id = existe.id
       console.log(lista.children[existe.id])
 
-      const x = parseInt(lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML) + parseInt(quantidade.value)
-      lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML = x
+      const quantidadeAtualizada = parseInt(lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML) + parseInt(quantidade.value)
+      lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML = quantidadeAtualizada
+      itens[existe.id].quantidade = quantidadeAtualizada
    } else {
       itemAtual.id = itens.length
 
