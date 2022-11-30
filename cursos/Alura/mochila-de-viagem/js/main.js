@@ -21,11 +21,9 @@ form.addEventListener("submit", (evento) => {
    
    if(existe) {
       itemAtual.id = existe.id
-      console.log(lista.children[existe.id])
 
-      const quantidadeAtualizada = parseInt(lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML) + parseInt(quantidade.value)
-      lista.children[existe.id].getElementsByTagName('strong')[0].innerHTML = quantidadeAtualizada
-      itens[existe.id].quantidade = quantidadeAtualizada
+      quantidadeAtualizada(existe,quantidade)
+
    } else {
       itemAtual.id = itens.length
 
@@ -46,12 +44,22 @@ function criaElemento(item){
    novoItem.classList.add("item")
 
    const strong = document.createElement('strong')
+   const fechar = document.createElement('span')
+   
+   fechar.classList.add('material-symbols-outlined')
+   fechar.innerHTML = close
    strong.innerHTML = item.quantidade
    strong.dataset.id = item.id
    novoItem.appendChild(strong)
    
    novoItem.innerHTML += item.nome
+   novoItem.innerHTML += fechar
 
    lista.appendChild(novoItem)
 
+}
+
+function quantidadeAtualizada(item,quantidade) {
+   document.querySelector("[data-id='"+item.id+"']").innerHTML = quantidade.value
+   itens[item.id].quantidade = quantidade.value
 }
