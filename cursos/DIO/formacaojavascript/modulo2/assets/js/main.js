@@ -1,5 +1,5 @@
 
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+
 const listaPokemon = document.querySelector('.pokemons')
 
 function convertPokemonToLi(pokemon){
@@ -23,7 +23,7 @@ function convertPokemonToLi(pokemon){
 
 pokeApi.getPokemons().then((pokemons = []) => {
    listaPokemon.innerHTML = pokemons.map(convertPokemonToLi).join('')
-   })
+})
 
   
 
@@ -34,14 +34,9 @@ pokeApi.getPokemons().then((pokemons = []) => {
       
       
       
-      /*for (let i = 1; i < pokemons.length; i++) {
-         const pokemon = pokemons[i];
-         listPokes.push(convertPokemonToLi(pokemon))
-      }
 
-      listaPokemon.innerHTML = listPokes
 
-    ESTA PEGANDO O RETORNO DO .THEN DE CIMA
+
    
-   .catch((error) => console.error(error))SE DER ERRO ELE EXECUTA ISSO
+   /*.catch((error) => console.error(error))SE DER ERRO ELE EXECUTA ISSO
    .finally(() => console.log('Requisição concluída')) DANDO CERTO OU ERRADO, APOS A REQUISIÇÃO ELE EXECUTA*/
