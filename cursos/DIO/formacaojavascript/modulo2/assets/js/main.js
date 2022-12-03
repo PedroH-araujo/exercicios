@@ -2,8 +2,20 @@ const listaPokemon = document.querySelector('.pokemons')
 const loadMoreButton = document.querySelector('#loadMoreButton')
 
 const maxRecords = 151
-const limit = 10
+const limit = 1
 let offset = 0;
+const details = document.querySelector('.pokemon-detail')
+const showdetailBtn = document.querySelector('.showBtn')
+const closedetailBtn = document.querySelector('.closeBtn')
+
+
+details.style.display = 'none'
+showdetailBtn.addEventListener('click', () => {
+   console.log('click')
+})
+closedetailBtn.addEventListener('click', () => {
+   details.style.display = 'none'
+})
 
 
 
