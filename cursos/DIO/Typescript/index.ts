@@ -70,5 +70,5 @@ const contaB: Conta = new Conta({ nomeTitular: 'Bionda', saldo: 0 })
 contaA.depositar(100)
 contaA.transferencia(70,contaB)
 console.log(contaA.meuSaldo())
-console.log(contaB.meuSaldo())
+
 
