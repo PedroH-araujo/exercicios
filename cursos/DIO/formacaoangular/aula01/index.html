@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,31 @@
    <link rel="stylesheet" href="styles/card.css">
 
 
-   <script src="Components/CardNews.js" defer></script> <!--Defer faz buscar o script só depois do browser criar a DOM-->
+   <script src="Components/CardNews.js" defer></script>
+   <!--Defer faz buscar o script só depois do browser criar a DOM-->
    <script src="Components/TituloDinamico.js" defer></script>
 </head>
+
 <body>
    <div class="container">
 
-      <div class="card">
-         <div class="card_left">
-            <span>By Pedro Henrique</span>
-            <h1>Darth Vader Contrata Devs</h1>
-            <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes</p>
-         </div>
-         <div class="card_right">
-            <img src="assets/asset-vader.png" alt="img-Darth Vader">
-         </div>
-      </div>
+   <card-news 
+      autor="Peter"
+      title="Darth Vader Contrata"
+      link-url="https://www.google.com"
+      content ="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+      photo="assets/asset-vader.png"
+   ></card-news>
 
-   </div>
+   <card-news 
+   title="Yoda Nasceu"
+   link-url="https://www.google.com"
+   content ="Yoda vai me ajudar a aprender Angular."
+   photo="assets/yoda.jpg"
+></card-news>
 
-   <card-news></card-news>
-   <titulo-dinamico></titulo-dinamico>
+   <!--<titulo-dinamico titulo="Noticia Urgente"></titulo-dinamico>
+   <titulo-dinamico titulo="Noticia Quente"></titulo-dinamico>-->
 </body>
+
 </html>
