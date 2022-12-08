@@ -89,7 +89,6 @@ footer>p{
       justify-content: space-around;
    }
    nav>button{
-      display: inline-block;
       align-self: flex-end;
       background: transparent;
       height: 30px;
