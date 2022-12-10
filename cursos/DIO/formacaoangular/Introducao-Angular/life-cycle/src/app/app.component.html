@@ -1,4 +1,7 @@
 <h1>My app</h1>
 
 <router-outlet></router-outlet>
-<app-check-sample></app-check-sample>
+<app-check-sample *ngIf=isAliveCheckSample ></app-check-sample>
+<button (click)="matar()">Destruir</button>
+<button (click)="vida()">Respawn</button>
+
