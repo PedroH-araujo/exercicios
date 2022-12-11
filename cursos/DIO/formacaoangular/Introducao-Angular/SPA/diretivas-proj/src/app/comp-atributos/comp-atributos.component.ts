@@ -10,7 +10,9 @@ export class CompAtributosComponent implements OnInit {
   estilo:string = "disable"
   corFundo:string = "red"
   corDaFonte:string = "yellow"
-
+  item:string = ""
+  lista:string[] = []
+  isEnableBlock:boolean = true
 
   trocar(){
     if(this.estilo == "disable"){
@@ -19,9 +21,21 @@ export class CompAtributosComponent implements OnInit {
       this.estilo = "disable"
     }
   }
+
+  removerLista(i:number){
+    this.lista.splice(i,1)
+  }
+
+  adicionarLista(){
+    this.lista.push(this.item)
+  }
+
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
 }
