@@ -12,7 +12,9 @@ window.addEventListener('resize', () => {
     navbar.style.display = 'none';
   } else {
     menubtn.style.display = 'inline-block';
-  }
+    if(window.getComputedStyle(navbar).display == 'block'){
+      menubtn.style.display = 'none';
+  }}
 } )
 
 
