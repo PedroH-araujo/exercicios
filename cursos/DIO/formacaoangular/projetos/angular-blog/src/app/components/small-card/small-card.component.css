@@ -1,0 +1,25 @@
+.container_small-card{
+
+   width: 700px;
+   display: flex;
+   flex-direction: row;
+}
+
+.small-card_img > img{
+   width: 200px;
+   margin-right: 20px;
+}
+
+.small-card_title {
+   padding-top: 5px;
+   text-align: start;
+}
+
+.small-card_title p {
+   color: grey;
+}
+
+
+hr{
+   margin: 25px 0;
+}
