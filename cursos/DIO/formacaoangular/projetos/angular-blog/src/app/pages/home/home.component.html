@@ -1,11 +1,10 @@
-<header>
-   <app-menu-bar></app-menu-bar>
-</header>
+
 <app-menu-title></app-menu-title>
 <h1>Filmes</h1>
 <div class="container_articles">
    <div class="articles_destaque">
-      <app-big-card 
+      <app-big-card
+      Id="1" 
       photoCover="https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2022/05/09142003/Avatar-2-The-Way-of-Water.jpg"
       cardTitle="Filme destaque da semana" 
       cardDescription="Novo filme da franquia Avatar estreia esta semana com gráficos que prometem revolucionar a indústria de filmes"
@@ -14,16 +13,19 @@
    </div>
    <div class="articles_menores">
       <app-small-card
+      Id="2"
       photoCover="http://disneyplusbrasil.com.br/wp-content/uploads/2022/10/Pantera-Negra-2-Shuri.jpg"
       cardTitle="Pantera Negra 2 conseguiu superar o primeiro filme?"
       
       ></app-small-card>
       <app-small-card
+      Id="3"
       photoCover="https://serialcookies.com.br/wp-content/uploads/2022/10/Ad%C3%A3o-Negro-04.jpg"
       cardTitle="A balança de poder da DC mudou"
       
       ></app-small-card>
       <app-small-card
+      Id="4"
       photoCover="https://portalpopline.com.br/wp-content/uploads/2022/03/gato-de-botas-2-trailer.jpg?w=640"
       cardTitle="Filme para todas as idades com diversão garantida"
       
@@ -36,6 +38,7 @@
 <div class="container_articles">
    <div class="articles_destaque">
       <app-big-card
+      Id="5"
       photoCover="https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/10/06/2758267823.jpeg"
       cardTitle="Anime destaque da semana"
       cardDescription="Na luta contra ALL FOR ONE tivemos uma revelação que ninguem imaginaria"
@@ -43,19 +46,23 @@
    </div>
    <div class="articles_menores">
       <app-small-card
+      Id="6"
       photoCover="https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2022/11/25/blue-lock-capa-1hrs1zmg672w6.jpg"
       cardTitle="Blue Lock vem para ser o anime de esporte do momento"
       
       ></app-small-card>
       <app-small-card
+      Id="7"
       photoCover="https://i0.wp.com/asianbreak.com.br/wp-content/uploads/2022/03/chainsaw-man.jpg?fit=1200%2C675&ssl=1"
       cardTitle="Chainsaw Man vem surpreendendo os fãns"
       
       ></app-small-card>
       <app-small-card
+      Id="8"
       photoCover="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2e54344c7cc1675af721b4021222230f.jpeg"
       cardTitle="Quando teremos a volta do melhor anime de todos os tempos"
 
       ></app-small-card>
    </div>
 </div>
+<a [routerLink]="['content']">BREAKING BAD</a>
