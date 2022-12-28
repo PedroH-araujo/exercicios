@@ -1,0 +1,95 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   height: 1024px;
+   width: 1440px;
+   margin: 20px;
+   background-color: #F3F5FC;
+}
+
+img{
+   position: absolute;
+   left: 7%;
+   top: 8%;
+}
+
+
+#box-esq{
+   display: flex;
+   flex-direction: column;
+   height: 944px;
+   width: 1000px;
+   background-color: #7f92a8;
+}
+
+#novotexto{
+   margin: 100px;
+   width: 873px;
+   height: 685px;
+   background-color: #2468b5;
+   border: none;
+}
+
+.aviso{
+   display: flex;
+   margin-left: 110px;
+}
+
+#botao{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#criptografa{
+   height: 67px;
+   width: 328px;
+   left: 0px;
+   top: 0px;
+   border-radius: 24px;
+   padding: 24px;
+   background-color: #0A3871;
+   text-align: center;
+}
+
+#descriptografa{
+   height: 67px;
+   width: 328px;
+   left: 0px;
+   top: 0px;
+   border-radius: 24px;
+   padding: 24px;
+   border: 2px solid #0A3871;
+   text-align: center;
+}
+
+#copia{
+   height: 67px;
+   width: 328px;
+   left: 0px;
+   top: 0px;
+   border-radius: 24px;
+   padding: 24px;
+   border: 2px solid #0A3871;
+   text-align: center;
+}
+
+#box-dir{
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   height: 944px;
+   background-color: white;
+   border-radius: 32px;
+   box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+#textopronto{
+   width: 399px;
+   height: 761px;
+}
