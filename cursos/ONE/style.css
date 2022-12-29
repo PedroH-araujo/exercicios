@@ -26,7 +26,6 @@ body{
    flex-direction: column;
    height: 944px;
    width: 1000px;
-   background-color: #7f92a8;
 }
 
 #novotexto{
@@ -35,6 +34,9 @@ body{
    height: 685px;
    border: none;
    font-size: 32px;
+   background-color: #F3F5FC;
+   color: #0A3871;
+   border: none;
 }
 
 .aviso{
@@ -85,7 +87,7 @@ body{
    width: 336px;
    height: 757px;
    font-size: 24px;
-   background-color: #7f92a8;
+   border: none;
 }
 
 .content-dir{
