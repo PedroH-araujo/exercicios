@@ -125,7 +125,7 @@ body{
       display: flex;
       flex-direction: column;
       margin: auto;
-      height: 800px;
+      height: 600px;
       width: 750px;
    }
 
@@ -142,7 +142,12 @@ body{
    #box-dir{
       margin: auto;
       height: 300px;
-      width: 500px;
+      width: 680px;
+   }
+
+   #textopronto{
+      width: 600px;
+      min-height: 100px;
    }
 
 }
