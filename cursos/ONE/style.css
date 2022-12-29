@@ -114,3 +114,35 @@ body{
    cursor: pointer;
 }
 
+
+@media (max-width: 1024px) {
+
+   body{
+      flex-direction: column;
+   }
+
+   #box-esq{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: 800px;
+      width: 750px;
+   }
+
+   #novotexto{
+      margin-top: 70px;
+      margin-bottom: 10px;
+      width: 630px;
+   }
+
+   .content-dir > img{
+      display: none;
+   }
+
+   #box-dir{
+      margin: auto;
+      height: 300px;
+      width: 500px;
+   }
+
+}
