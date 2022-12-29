@@ -14,7 +14,7 @@ body{
    background-color: #F3F5FC;
 }
 
-img{
+.logo{
    position: absolute;
    left: 7%;
    top: 8%;
@@ -80,12 +80,26 @@ img{
 }
 
 #textopronto{
+   display: none;
    margin: 32px;
    width: 336px;
    height: 757px;
    font-size: 24px;
    background-color: #7f92a8;
 }
+
+.content-dir{
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.content-dir > h1,p{
+   text-align: center;
+   padding: 5px;
+}
+
 
 #copia{
    height: 67px;
@@ -97,3 +111,4 @@ img{
    margin: 10px auto;
    cursor: pointer;
 }
+

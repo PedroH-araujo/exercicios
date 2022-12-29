@@ -1,14 +1,21 @@
 const novotexto = document.querySelector('#novotexto')
 const textopronto = document.querySelector('#textopronto')
+const contentDir = document.querySelector('.content-dir')
 const criptografa = document.querySelector('#criptografa')
 const descriptografa = document.querySelector('#descriptografa')
+const copia = document.querySelector('#copia')
+
 
 criptografa.addEventListener('click', () => {
+   contentDir.style.display = 'none'
+   textopronto.style.display = 'inline-block'
+
+   
    let x = novotexto.value.split('')
 
    x.forEach(criptogrfia)
 
-   textopronto.innerHTML = x.join('')
+   textopronto.value = x.join('')
    
 
    function criptogrfia(element, index){
@@ -32,9 +39,11 @@ criptografa.addEventListener('click', () => {
 })
 
 descriptografa.addEventListener('click', () => {
-   
+   contentDir.style.display = 'none'
+   textopronto.style.display = 'inline-block'
+
    let x = novotexto.value
-   textopronto.innerHTML = descriptografia(x)
+   textopronto.value = descriptografia(x)
    
    
    function descriptografia(texto){
@@ -48,4 +57,16 @@ descriptografa.addEventListener('click', () => {
    }
    
    
+})
+
+copia.addEventListener('click', () =>  {
+   contentDir.style.display = 'none'
+   textopronto.style.display = 'inline-block'
+
+      let textoCopiado = textopronto;
+      textoCopiado.select();
+      textoCopiado.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("O texto foi copiado");
+
 })
