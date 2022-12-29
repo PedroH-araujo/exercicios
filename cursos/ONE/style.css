@@ -10,8 +10,6 @@
 body{
    display: flex;
    justify-content: center;
-   height: 1024px;
-   width: 1440px;
    margin: 20px;
    background-color: #F3F5FC;
 }
@@ -35,7 +33,6 @@ img{
    margin: 100px;
    width: 873px;
    height: 685px;
-   background-color: #2468b5;
    border: none;
    font-size: 32px;
 }
@@ -48,6 +45,7 @@ img{
 #botao{
    display: flex;
    justify-content: space-evenly;
+   margin: 10px;
 }
 
 #criptografa{
@@ -57,6 +55,7 @@ img{
    padding: 24px;
    background-color: #0A3871;
    text-align: center;
+   cursor: pointer;
 }
 
 #descriptografa{
@@ -66,6 +65,7 @@ img{
    padding: 24px;
    border: 2px solid #0A3871;
    text-align: center;
+   cursor: pointer;
 }
 
 #box-dir{
@@ -84,6 +84,7 @@ img{
    width: 336px;
    height: 757px;
    font-size: 24px;
+   background-color: #7f92a8;
 }
 
 #copia{
@@ -93,5 +94,6 @@ img{
    padding: 24px;
    border: 2px solid #0A3871;
    text-align: center;
-   margin: 1px auto;
+   margin: 10px auto;
+   cursor: pointer;
 }
