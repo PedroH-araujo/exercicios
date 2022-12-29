@@ -33,35 +33,19 @@ criptografa.addEventListener('click', () => {
 
 descriptografa.addEventListener('click', () => {
    
-   let x = novotexto.value.split(' ')
-
-
-
-
-   var str = x[0];
-   var chunks = [];
-   for (var i = 0, charsLength = str.length; i < charsLength; i += 3) chunks.push(str.substring(i, i + 3));
-   for (var i = 0; i < chunks.length; i++) console.log(chunks[i]);
-
-
-
+   let x = novotexto.value
+   textopronto.innerHTML = descriptografia(x)
    
-   if(novotexto.value.indexOf('ai') != -1){
-      x.splice(novotexto.value.indexOf('ai'), 2 , 'a')
-   }
-   if(novotexto.value.indexOf('enter') != -1){
-      x.splice(novotexto.value.indexOf('enter'), 5 , 'e')
-   }
-   if(novotexto.value.indexOf('imes') != -1){
-      x.splice(novotexto.value.indexOf('ime'), 4 , 'i')
-   }
-   if(novotexto.value.indexOf('ober') != -1){
-      x.splice(novotexto.value.indexOf('ober'), 4, 'o')
-   }
-   if(novotexto.value.indexOf('ufat') != -1){
-      x.splice(novotexto.value.indexOf('ufat'), 4 , 'u')
+   
+   function descriptografia(texto){
+      let t = texto.replaceAll('ai', 'a')
+      .replaceAll('enter', 'e')
+      .replaceAll('imes', 'i')
+      .replaceAll('ober', 'o')
+      .replaceAll('ufat', 'u')
+
+      return t
    }
    
-   textopronto.innerHTML = x.join('')
    
 })
