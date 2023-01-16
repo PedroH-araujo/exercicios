@@ -63,7 +63,7 @@
             <p><label for="inome">Nome</label></p>
             <input type="text" name="nome" id="inome" >
             <p><label for="itelefone">Telefone</label></p>
-            <input type="number" name="telefone" id="itelefone">
+            <input type="tel" maxlength="15" onkeyup="handlePhone(event)" name="telefone" id="itelefone">
             <p><label for="iemail">Email</label></p>
             <input type="email" name="email" id="iemail">
             <p><label for="imensagem">Mensagem</label></p>
@@ -73,5 +73,6 @@
       </div>
    </main>
    <script src="main.js"></script>
+   <script src="contato.js"></script>
 </body>
 </html>
