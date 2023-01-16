@@ -94,6 +94,7 @@ footer>p{
       background: transparent;
       height: 30px;
       cursor: pointer;
+      margin-bottom: 5px;
    }
    #close-btn{
       display: none;
