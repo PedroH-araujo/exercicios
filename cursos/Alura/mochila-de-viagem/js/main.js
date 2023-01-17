@@ -12,7 +12,7 @@ form.addEventListener("submit", (evento) => {
    const nome = evento.target.elements['nome']
    const quantidade = evento.target.elements['quantidade']
    
-   const existe =itens.find(elemento => elemento.nome === nome.value)
+   const existe = itens.find(elemento => elemento.nome === nome.value)
 
    const itemAtual = {
       "nome": nome.value,
@@ -44,16 +44,14 @@ function criaElemento(item){
    novoItem.classList.add("item")
 
    const strong = document.createElement('strong')
-   const fechar = document.createElement('span')
    
-   fechar.classList.add('material-symbols-outlined')
-   fechar.innerHTML = close
    strong.innerHTML = item.quantidade
    strong.dataset.id = item.id
    novoItem.appendChild(strong)
    
    novoItem.innerHTML += item.nome
-   novoItem.innerHTML += fechar
+
+   novoItem.appendChild(botaodeleta())
 
    lista.appendChild(novoItem)
 
@@ -62,4 +60,21 @@ function criaElemento(item){
 function quantidadeAtualizada(item,quantidade) {
    document.querySelector("[data-id='"+item.id+"']").innerHTML = quantidade.value
    itens[item.id].quantidade = quantidade.value
+}
+
+function botaodeleta() {
+   const elementoBotao = document.createElement("button")
+   elementoBotao.innerText = "X"
+
+   elementoBotao.addEventListener("click", function() {
+ //     deletaElemento(this.parentNode)
+      console.log(this.parentNode.childNodes[0].attributes[0].nodeValue)
+   })
+
+   return elementoBotao
+}
+
+function deletaElemento(tag) {
+   tag.remove()
+   
 }
