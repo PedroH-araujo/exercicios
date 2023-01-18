@@ -19,7 +19,6 @@ function validaNumero(palpite) {
    if (palpite < maiorValor && palpite > menorValor) {
       exibeChuteNaTela(palpite)
       comparaNumero(palpite)
-      setTimeout(novoPalpite, 1000)
       exibirPalpites(palpite)
    } else {
       alert(`Diga um numero entre ${menorValor} e ${maiorValor}`)
@@ -31,10 +30,6 @@ function exibeChuteNaTela(palpite) {
    <div>Você disse:</div>
    <span class="box">${palpite}</span>
    `
-}
-
-function novoPalpite() {
-   recognition.start()
 }
 
 function comparaNumero(palpite) {
@@ -61,3 +56,5 @@ function exibirPalpites(palpite) {
    <span class="box">${palpite}</span>
    `
 }
+
+recognition.addEventListener('end', () => recognition.start())
