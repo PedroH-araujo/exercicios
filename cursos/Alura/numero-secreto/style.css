@@ -40,3 +40,8 @@ h3 {
    padding: 10px;
    margin: 20px;
 }
+
+#escolhas > span {
+   font-size: 2.5em;
+   margin: 10px;
+}
