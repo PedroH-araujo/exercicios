@@ -31,12 +31,14 @@ async function Requisicao(cep) {
          }
       }
       if (consultaCEPConvertida.erro){
+         alert("Insira um CEP valido")
          throw Error('CEP não existente!')
       }
       
       return consultaCEPConvertida
    } catch (erro) {
       console.log(erro);
+      
    }
 }
 
