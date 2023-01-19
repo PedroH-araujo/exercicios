@@ -15,21 +15,16 @@ async function Requisicao(cep) {
    try {
       var consultaCEP = await fetch(`http://viacep.com.br/ws/${cep}/json/`)
       var consultaCEPConvertida = await consultaCEP.json()
-      var pegaRua = await consultaCEPConvertida.logradouro
-      var pegaBairro = await consultaCEPConvertida.bairro
-      var pegaCidade = await consultaCEPConvertida.localidade
-      var pegaEstado = await consultaCEPConvertida.uf
+      var pegaRua = consultaCEPConvertida.logradouro
+      var pegaBairro = consultaCEPConvertida.bairro
+      var pegaCidade = consultaCEPConvertida.localidade
+      var pegaEstado = consultaCEPConvertida.uf
 
       endform.value = pegaRua
       bairroform.value = pegaBairro
       cidadeform.value = pegaCidade
+      estadoselect.value = pegaEstado
 
-      for(var i = 0; i< estadoselect.options.length; i++){
-         if (estadoselect.options[i].value === pegaEstado) {
-            estadoselect.selectedIndex = i;
-            break;
-         }
-      }
       if (consultaCEPConvertida.erro){
          alert("Insira um CEP valido")
          throw Error('CEP não existente!')
@@ -41,13 +36,6 @@ async function Requisicao(cep) {
       
    }
 }
-
-
-
-
-
-
-
 
 
 
