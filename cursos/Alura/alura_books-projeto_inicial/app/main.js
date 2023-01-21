@@ -7,8 +7,8 @@ async function requisicao() {
       for (let i = 0; i < response.length; i++) {
          lista.push(response[i])
       }
-      
-      lista.forEach(divLivro)
+      let livroComDesconto = aplicaDesconto(lista)
+      livroComDesconto.forEach(divLivro)
    } catch (error) {
       console.log(error)
    }
