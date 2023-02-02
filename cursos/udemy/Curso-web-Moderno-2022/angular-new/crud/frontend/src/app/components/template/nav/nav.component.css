@@ -11,3 +11,8 @@
    padding-right: 10px;
    vertical-align: middle;
 }
+
+.content{
+   padding: 16px;
+   background-color: rgb(107, 107, 107);
+}
