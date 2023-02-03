@@ -1,3 +1,4 @@
+import { HeaderService } from './header.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private headerervice: HeaderService) {}
+
+  get title(): string {
+    return this.headerervice.headerData.title
+  }
+  
+  get icon(): string {
+    return this.headerervice.headerData.icon
+  }
+  
+  get routeUrl(): string {
+    return this.headerervice.headerData.title
+  }
 }
