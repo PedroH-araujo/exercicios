@@ -33,7 +33,7 @@ export class ProductCreateComponent {
 
   }
   
-  cancelProduct(): void {
+  cancel(): void {
     this.router.navigate(['/products'])
   }
 }
