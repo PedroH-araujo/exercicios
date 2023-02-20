@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CriarPensamentoComponent } from './component/penamentos/criar-pensamento/criar-pensamento.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { CriarPensamentoComponent } from './component/penamentos/criar-pensament
     imports: [
         BrowserModule,
         AppRoutingModule,
+        FormsModule
     ]
 })
 export class AppModule { }

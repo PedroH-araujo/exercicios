@@ -8,9 +8,16 @@ import { Component } from '@angular/core';
 export class CriarPensamentoComponent {
   pensamento = {
     id: '1',
-    conteudo: 'Aprendendo Angular',
-    modelo: 'Dev'
+    conteudo: '',
+    autoria: '',
+    modelo: 'modelo2'
   }
 
-  
+  criarPensamento(){
+    alert('pensamento criado')
+  }
+
+  cancelarPensamento(){
+    alert('pensamento cancelado')
+  }
 }
