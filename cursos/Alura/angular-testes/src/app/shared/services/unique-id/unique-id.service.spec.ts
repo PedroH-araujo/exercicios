@@ -3,6 +3,7 @@ import { UniqueServiceId } from './unique-id.service';
 describe(UniqueServiceId.name, () => {
 
   let service: UniqueServiceId = null
+
   beforeEach(() => {
     service = new UniqueServiceId()
   })
@@ -32,9 +33,10 @@ describe(UniqueServiceId.name, () => {
 
   it(`#${UniqueServiceId.prototype.generateUniqueIdWhithPrefix.name}
   should throw when called with empty`, () => {
-    const emptyValues = [null, undefined, '']
+    const emptyValues = [null, undefined, '', '1', '0']
     emptyValues.forEach(emptyValue => {
-      expect(() => service.generateUniqueIdWhithPrefix(emptyValue)).toThrow()
+      expect(() => service.generateUniqueIdWhithPrefix(emptyValue))
+      .withContext(`Empty value: ${emptyValue} `).toThrow()
     })
   })
 
